@@ -1,0 +1,140 @@
+* {
+    padding: 10px;
+    margin: 10px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(130, 145, 158) !important;
+}
+    .flex-container {
+        background-color:white;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-block: 10px;
+                    
+    }
+    .logo-container img{
+    max-width: 100%;
+    height: auto;
+}
+    .logo-container{
+        margin-right: 20px;
+    }
+
+
+
+    .elemento{
+        flex: 1;
+        background-color: rgb(128, 0, 0);
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+        }   
+    .separado{
+        flex: 1;
+        background-color: rgb(128, 0, 0);
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width:auto;
+        margin-left: 800px;
+        margin-right: 20px;
+        text-decoration: none;
+        color: white;
+        transition: background-color 0.3s;
+       }
+    .separado:hover{
+        background-color: rgb(214, 115, 115);
+    }
+    .container{
+        background-color: black;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+
+    }
+    .left img{
+        max-width: 100%;
+        text-align:left;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .grid-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px; /* Espacio entre las columnas */
+        padding: 20px;
+        background-color: rgb(130, 145, 158);
+    }
+
+    /* Estilos para cada elemento dentro del grid */
+    .grid-item {
+        text-align: center;
+    }
+    .grid-item img {
+        width: 100%; /* Ajustar ancho al 100% del contenedor */
+        height: auto; /* Mantener la proporción original */
+        object-fit: cover; /* Rellenar el contenedor sin deformar la imagen */
+    }
+    .grid-item p {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16px; 
+        line-height: 1.2; 
+        color: black; 
+        text-align: justify;
+    }
+    .container2{
+        background-color: black;
+        display:flex;
+        flex-direction: row;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        max-width: 100%;
+        align-items: center;
+        }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    .social-icons a {
+        color: white;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 10px;
+        font-size: 20px;
+        transition: background-color 0.3s;
+    }
+    .social-icons:hover{
+        background-color: rgb(152, 147, 147);
+    }
+
+    @media only screen and (max-width: 480px) {
+        .grid-section {
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+   
+    
