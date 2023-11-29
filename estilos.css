@@ -1,12 +1,15 @@
 * {
     padding: 10px;
     margin: 10px;
+    
 }
 
 body{
     margin: 0;
     padding: 0;
     background-color: rgb(130, 145, 158) !important;
+    width: 100%;
+    place-items: center;
 }
     .flex-container {
         background-color:white;
@@ -64,19 +67,36 @@ body{
     }
     .container{
         background-color: black;
+        color: white;
         display:grid;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        width: auto; 
+        max-width: 1600px;
+        gap: 10px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: white;
-
+       
     }
-    .left img{
-        max-width: 100%;
-        text-align:left;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    .container.left {
+        overflow: hidden;
     }
 
+    .container.left img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;        
+    }
+    .container.right {
+        display: flex;
+        align-items: center;
+    }
+    .container.right.content {
+        padding-left: 20px;
+    }
+    .container.right.content p {
+        font-size: 16px;
+        line-height: 26px;
+        padding-bottom: 15px;
+    }
     .grid-section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -129,12 +149,27 @@ body{
         background-color: rgb(152, 147, 147);
     }
 
-    @media only screen and (max-width: 480px) {
+    @media (max-width: 991px) {
+        .container{
+            width: 90%;
+            grid-template-columns: 1fr;
+        }
+        .container.left img{
+            padding: 0;
+        }
+        .container.right.content{
+            padding-left: 0;
+        }
         .grid-section {
             grid-template-columns: 1fr;
         }
     }
 
-
+    @media (max-width: 768px){
+    .container{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}
    
     
